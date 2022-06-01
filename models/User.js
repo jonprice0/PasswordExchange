@@ -34,6 +34,18 @@ User.init(
             validate: {
                 len: [4]
             }
+        },
+        site_offered: {
+            type: DataTypes.STRING
+        },
+        site_username: {
+            type: DataTypes.STRING
+        },
+        site_password: {
+            type: DataTypes.STRING
+        },
+        site_wanted: {
+            type: DataTypes.STRING
         }
     },
     {
