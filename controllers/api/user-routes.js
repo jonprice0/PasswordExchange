@@ -41,6 +41,25 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// router.get('/:site_wanted', (req, res) => {
+//     User.findOne({
+//         where: {
+//             site_wanted: req.params.site_wanted
+//         },
+//         attributes: [
+//             'id',
+//             'username'
+//         ]
+//     })
+//     .then(dbUserData => {
+//         res.json(dbUserData);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//         res.status(500).json(err);
+//     });
+// });
+
 router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
